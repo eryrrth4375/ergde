@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "beauty-upgrade.tw"
         - name: Vless_UUID
-          value: "d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+          value: "8353e4c9-24dc-4225-b819-4125ee1e5d38"
         - name: Vless_Path
-          value: "/d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+          value: "/fhfhUTT"
         - name: Vmess_UUID
-          value: "d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+          value: "8353e4c9-24dc-4225-b819-4125ee1e5d38"
         - name: Vmess_Path
-          value: "/d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+          value: "/d4b3grERT"
         - name: Share_Path
           value: "/share233"
