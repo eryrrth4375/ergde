@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dasc
+  name: moer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dasc
+      app: moer
   template:
     metadata:
       labels:
-        app: dasc
+        app: moer
     spec:
       containers:
-      - image: okteto.dev/dasc:latest
-        name: dasc
+      - image: okteto.dev/moer:latest
+        name: moer
         ports:
         - containerPort: 8080
         env:
