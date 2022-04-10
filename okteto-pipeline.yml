@@ -1,4 +1,4 @@
 deploy:
-  - okteto build -t okteto.dev/dasc:latest
+  - okteto build -t okteto.dev/moer:latest
   - kubectl apply -f k8s/service.yml
 
