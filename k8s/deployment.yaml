@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dasc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dasc
+  template:
+    metadata:
+      labels:
+        app: dasc
+    spec:
+      containers:
+      - image: okteto.dev/dasc:latest
+        name: dasc
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "beauty-upgrade.tw"
+        - name: Vless_UUID
+          value: "d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+        - name: Vless_Path
+          value: "/d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+        - name: Vmess_UUID
+          value: "d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+        - name: Vmess_Path
+          value: "/d4987fee-e430-4ab0-bb37-8ce6ff929b02"
+        - name: Share_Path
+          value: "/share233"
